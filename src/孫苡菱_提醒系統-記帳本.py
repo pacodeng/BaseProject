@@ -3,7 +3,7 @@ import datetime
 import time
 
 def Record_Book():
-    with open('test.json', 'r', encoding='utf-8-sig') as f:  # 讀檔
+    with open('孫苡菱_提醒系統-記帳本.json', 'r', encoding='utf-8-sig') as f:  # 讀檔
         data = json.load(f)
     # 建立一個list --全部紀錄
     all_list = []
@@ -143,7 +143,7 @@ def Record_Book():
             _just = input("Input Anything To Exit...")
             break
 
-    with open('test.json', 'w', encoding='utf-8-sig') as f:  # 寫檔 更新資料庫
+    with open('孫苡菱_提醒系統-記帳本.json', 'w', encoding='utf-8-sig') as f:  # 寫檔 更新資料庫
         json.dump(all_list, f)
 
 
