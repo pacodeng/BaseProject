@@ -2,8 +2,68 @@
 import json
 import datetime
 import time
+import json
 
-def Record_Book():
+
+flag = 0
+username = []
+password = []
+temp = []
+i = 0
+while 1:
+    cmd = input('''
+    1：註冊系統
+    2：登入系統
+    3：退出系統
+    請輸入您的操作：''')
+    if cmd.isdigit() and int(cmd) == 3:
+        exit()
+    elif cmd.isdigit() and int(cmd) == 1:
+        username = input("    Enter Account: ")
+        password = input("    Enter Password: ")
+        length_username = len(username)
+        length_password = len(password)
+        if length_username < 10 or length_password < 10:
+            print("    username or password less than 16, enter again")
+            continue;
+        if username == '' or password == '':
+            print("    Please enter account and password")
+            continue;
+        temp = 'Account:' + username + '\n' + 'Password:' + password
+        f = open("register.json", "w")
+        f.write(temp)
+        print('    Register Successful')
+    elif cmd.isdigit() and int(cmd) == 2:
+        user = input("    Enter Account: ")
+        pwd = input("    Enter Password: ")
+        if user == '' or pwd == '':
+            print("    Please enter account and password");
+            continue;
+        f = open('register.json', 'r')
+        if user != username or password != pwd:
+            print("    Account Or Password Not Correct, Please Enter Again\n")
+            flag = flag+1
+            if flag == 3:
+                print('    Are you sure this is your account ?')
+            continue
+        elif user == username and password == pwd:
+            print("    Welcome\n")
+
+            print('1.角色資料 2.任務牆 3.好友 4."Record Book 5.Sign out ') # 主頁面
+            point = int(input("Please choose a function"))
+        while(1):
+            if point == 1:
+                
+            elif point == 2:
+            elif point == 3:
+            elif point == 4:
+                 Record_Book()
+            elif point == 5:
+                 break
+            else:
+                print("Error")
+
+            def Record_Book(): # 記帳本
     with open('孫苡菱_提醒系統-記帳本.json', 'r', encoding='utf-8-sig') as f:  # 讀檔
         data = json.load(f)
     # 建立一個list --全部紀錄
@@ -152,12 +212,4 @@ num = int(input("Input 1 to test the func. of Record_BookI"))
 if num == 1:
     Record_Book()
 
-print('1.角色資料 2.任務牆 3.好友 4.記帳本 5.登出 ')
-point = int(input("請輸入功能選項"))
-while(1):
-    if point == 1:
-        Record_Book()
-    elif point == 2:
-        
-    else:
-        print("Error")
+
