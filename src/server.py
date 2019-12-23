@@ -1,8 +1,7 @@
 import socket
 from _thread import *
-from player import Player , projectile
 import pickle
-from config import IP, PORT, maxPlayer
+from config import IP, PORT
 import packet
 import json
 
