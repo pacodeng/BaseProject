@@ -1,0 +1,56 @@
+﻿[
+   {
+      "style": 1,
+      "year": 2019,
+      "month": 12,
+      "date": 19,
+      "time": "morning",
+      "amount": 300.11
+   },
+   {
+     "style": 2,
+      "year": 2019,
+      "month": 12,
+      "date": 19,
+      "time": "noon",
+      "amount": 300},
+   {
+     "style": 1,
+     "year": 2019,
+     "month": 12,
+     "date": 20,
+     "time": "evening",
+     "amount": 9
+   },
+   {
+     "style": 1,
+     "year": 2019,
+     "month": 12,
+     "date": 20,
+     "time": "evening",
+     "amount": 299
+   },
+   {
+     "style": 2,
+     "year": 2019,
+     "month": 12,
+     "date": 20,
+     "time": "morning",
+     "amount": 900
+   },
+   {
+     "style": 2,
+     "year": 2019,
+     "month": 12,
+     "date": 20,
+     "time": "afternoon",
+     "amount": 900},
+   {
+     "style": 1,
+     "year": 2019,
+     "month": 12,
+     "date": 21,
+     "time": "afternoon",
+     "amount": 63
+   }
+]
