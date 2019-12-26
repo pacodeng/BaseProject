@@ -4,7 +4,7 @@ import time
 import os
 from Recordbook import *
 from LoginSYS import *
-#from Mission import *
+from Mission import *
 
 # 建立一個list --全部紀錄
 all_list = []
