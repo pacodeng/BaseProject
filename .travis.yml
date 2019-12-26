@@ -3,3 +3,5 @@ install:
   - pip install opencv-python
   - pip install schedule
 # command to run tests
+script:
+  - pytest
