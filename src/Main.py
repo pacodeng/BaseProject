@@ -6,7 +6,7 @@ from LoginSYS import *
 from Mission import *
 from DataManage import *
 from threading import Thread
-from Chatroom import 
+from Chatroom import *
 
 def Searchinfo():
     with open('ID_data.json', 'r' , encoding='utf-8-sig') as j:
